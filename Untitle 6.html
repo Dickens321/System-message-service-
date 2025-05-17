@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Revision SMS System</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+        header { background: #0066cc; color: white; padding: 20px 10%; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 30px 10%; max-width: 900px; margin: auto; background: white; box-shadow: 0 0 10px #ccc; }
+        footer { background: #0066cc; color: white; text-align: center; padding: 15px 10%; margin-top: 40px; }
+        h1, h2 { color: #004080; }
+        ul { line-height: 1.6; }
+        .contact-form input, .contact-form textarea {
+            width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #0066cc; color: white; border: none; padding: 10px 15px; cursor: pointer;
+            border-radius: 5px; font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Smart Revision SMS System</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Smart Revision SMS System</h2>
+        <p>
+            A revolutionary SMS-based platform designed to help students revise their lessons anywhere in Rwanda,
+            without the need for internet or smartphones.
+        </p>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <ul>
+            <li>Students send an SMS with the subject and level, e.g., <strong>REVISE MATH S5</strong>.</li>
+            <li>The system replies with revision questions via SMS.</li>
+            <li>Students respond with answers through SMS.</li>
+            <li>The system scores the answers and sends feedback via SMS.</li>
+        </ul>
+    </section>
+
+    <section id="objectives">
+        <h2>Objectives</h2>
+        <ul>
+            <li>Provide accessible revision content to all students, regardless of phone type.</li>
+            <li>Enable affordable and convenient self-assessment.</li>
+            <li>Support educators and parents in monitoring student progress.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have questions or want to support this project, please contact us:</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will get back to you soon.');">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Smart Revision SMS System. All rights reserved.
+</footer>
+
+</body>
+</html>
